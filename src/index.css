@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-text: #333333;
+    --color-secondary-text: #526E7A;
+    --color-secondary-dark: #444444;
+    --color-floral-accent: #807CFC;
+    --color-floral-secondary: #C2A3FF;
+    --color-soft-lavender: #B8BAFF;
+    --color-light-neutral: #EEEEEE;
+    --color-border-neutral: #D2D2D2;
+    --color-soft-bg: #F7F5F0;
+    --color-cream-canvas: #FAF9F5;
+    --color-main-bg: #FFFFFF;
+  }
+
+  body {
+    color: var(--color-primary-text);
+    background-color: var(--color-cream-canvas);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Floating animation for botanical petals */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+  }
+}
+
+@keyframes floatSway {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-6deg) scale(1.03);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+.animate-float-sway {
+  animation: floatSway 7.5s ease-in-out infinite;
+}
+
+/* Subtle decorative grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2D2D2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #807CFC;
+}

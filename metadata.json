@@ -1,0 +1,8 @@
+{
+  "name": "Bloom & Petal — Artisan Florist & Flower Studio",
+  "description": "Thoughtfully gathered blooms, signature luxury bouquets, and bespoke floral gifting crafted for life's meaningful moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
